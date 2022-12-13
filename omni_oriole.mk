@@ -30,11 +30,10 @@ PRODUCT_SYSTEM_NAME := oriole
 PRODUCT_SYSTEM_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="oriole-user 13 TP1A.221105.002 9080065 release-keys"
+    PRIVATE_BUILD_DESC="oriole-user 13 TQ1A.221205.011 9244662 release-keys"
 
-# TODO - could use PRODUCT_OVERRIDE_FINGERPRINT
-# defined in vendor/google_devices/oriole/proprietary/BoardConfigVendor.mk
-BUILD_FINGERPRINT := google/oriole/oriole:13/TP1A.221105.002/9080065:user/release-keys
+# defined in vendor/google_devices/oriole/proprietary/device-vendor.mk
+BUILD_FINGERPRINT := google/oriole/oriole:13/TQ1A.221205.011/9244662:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -57,7 +56,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # euicc from stock
 PRODUCT_COPY_FILES += \
     device/google/raviole/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.google.android.euicc.xml
-    
+
 # sysconfig from stock
 PRODUCT_COPY_FILES += \
     device/google/raviole/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
+
