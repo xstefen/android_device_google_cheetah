@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_oriole.mk
+    $(LOCAL_DIR)/omni_raven.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    omni_oriole-userdebug \
-    omni_oriole-user
+    omni_raven-userdebug \
+    omni_raven-user

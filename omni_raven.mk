@@ -21,19 +21,19 @@ TARGET_BOOTANIMATION_SIZE := 1080p
 
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/google/gs101/device-omni.mk)
-$(call inherit-product, device/google/raviole/aosp_oriole.mk)
+$(call inherit-product, device/google/raviole/aosp_raven.mk)
 
-PRODUCT_NAME := omni_oriole
-PRODUCT_SYSTEM_DEVICE := oriole
-PRODUCT_SYSTEM_MODEL := Pixel 6
-PRODUCT_SYSTEM_NAME := oriole
+PRODUCT_NAME := omni_raven
+PRODUCT_SYSTEM_DEVICE := raven
+PRODUCT_SYSTEM_MODEL := Pixel 6 Pro
+PRODUCT_SYSTEM_NAME := raven
 PRODUCT_SYSTEM_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="oriole-user 13 TQ1A.221205.011 9244662 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TQ1A.221205.011 9244662 release-keys"
 
-# defined in vendor/google_devices/oriole/proprietary/device-vendor.mk
-BUILD_FINGERPRINT := google/oriole/oriole:13/TQ1A.221205.011/9244662:user/release-keys
+# defined in vendor/google_devices/raven/proprietary/device-vendor.mk
+BUILD_FINGERPRINT := google/raven/raven:13/TQ1A.221205.011/9244662:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -44,13 +44,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
-# HBM
-PRODUCT_COPY_FILES += \
-    device/google/raviole/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
-
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlay
 
 # euicc from stock
 PRODUCT_COPY_FILES += \
