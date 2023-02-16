@@ -4,5 +4,6 @@
     "make": "Google",
     "image": "meta/device_image.jpg",
     "state": "official",
-    "device": "raven"
+    "device": "raven",
+    "readme": "https://dl.omnirom.org/raven/README.install"
 }
