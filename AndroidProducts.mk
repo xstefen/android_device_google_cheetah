@@ -15,9 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_raven.mk
+    $(LOCAL_DIR)/omni_cheetah.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    omni_raven-userdebug \
-    omni_raven-user
+    omni_cheetah-eng \
+    omni_cheetah-userdebug \
+    omni_cheetah-user

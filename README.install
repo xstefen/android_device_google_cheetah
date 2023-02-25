@@ -4,15 +4,13 @@ The builds are in OTA format so they dont include bootloader
 and radio images so make sure you have flashed latest bootloader
 and radio image from google stock images
 
-bootloader-raven-slider<version>.img
-radio-raven<version>.img
+bootloader-cheetah-cloudripper<version>.img
+radio-cheetah<version>.img
 
 First time install:
 
-Bear with me that I simply dont care about Windooze users here
-just google for any specific instructions there.
-
-Also I will skip anything regarding bootloader unlock here
+Bear with me that I simply will not hold hands here so just google for any 
+specific instructions; I will skip anything regarding bootloader unlock here 
 and assume you did this before.
 
 Extract file payload.bin from <ota-file>.zip
